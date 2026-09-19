@@ -1,0 +1,381 @@
+/*!
+ * MindSpace - Mental Health Awareness
+ * Custom styles built on top of Bootstrap 4
+ */
+
+:root {
+  --ms-primary: #4f6f6a;
+  --ms-primary-dark: #35504c;
+  --ms-accent: #e8967a;
+  --ms-crisis: #c65b4e;
+  --ms-light-bg: #f6f5f1;
+  --ms-cream: #fbf8f3;
+  --ms-text: #33403e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--ms-text);
+  padding-top: 106px;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: 700;
+}
+
+a {
+  color: var(--ms-primary-dark);
+}
+
+a:hover {
+  color: var(--ms-accent);
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  z-index: 2000;
+  background: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 0 0 0.25rem 0;
+}
+
+.skip-link:focus {
+  left: 0;
+  top: 66px;
+}
+
+/* Crisis bar */
+.crisis-bar {
+  background: var(--ms-crisis);
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+}
+
+.crisis-bar a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* Navbar */
+#mainNav {
+  top: 34px;
+  background-color: rgba(251, 248, 243, 0.97);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+}
+
+#mainNav .navbar-brand {
+  color: var(--ms-primary-dark);
+  font-size: 1.4rem;
+}
+
+#mainNav .nav-link {
+  color: var(--ms-text);
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+}
+
+#mainNav .nav-link:hover {
+  color: var(--ms-primary);
+}
+
+.btn-crisis {
+  background-color: var(--ms-crisis);
+  border-color: var(--ms-crisis);
+  color: #fff !important;
+  border-radius: 30px;
+  padding: 0.5rem 1.25rem !important;
+}
+
+.btn-crisis:hover {
+  background-color: #a8483d;
+  border-color: #a8483d;
+  color: #fff !important;
+}
+
+/* Hero */
+.hero-section {
+  background: linear-gradient(135deg, var(--ms-primary-dark), var(--ms-primary));
+  padding: 8rem 0 7rem;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-subheading {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 2.25rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  opacity: 0.95;
+}
+
+.hero-buttons .btn {
+  border-radius: 30px;
+  padding: 0.75rem 2rem;
+  font-weight: 700;
+}
+
+/* Sections */
+.page-section {
+  padding: 6rem 0;
+}
+
+.section-header {
+  margin-bottom: 3rem;
+}
+
+.section-heading {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.section-subheading {
+  font-size: 1.1rem;
+  color: #6b7876;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.lead-paragraph {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+/* About */
+.about-list li {
+  margin-bottom: 0.75rem;
+}
+
+.about-list i {
+  color: var(--ms-primary);
+  margin-right: 0.5rem;
+}
+
+.about-card {
+  background: var(--ms-light-bg);
+  border-radius: 12px;
+  padding: 2.5rem;
+  border-left: 5px solid var(--ms-primary);
+}
+
+.about-card h3 {
+  color: var(--ms-primary-dark);
+}
+
+.about-card-quote {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.about-card-quote i {
+  color: var(--ms-accent);
+  margin-bottom: 0.5rem;
+}
+
+.about-card-quote p {
+  font-style: italic;
+}
+
+.about-card-quote span {
+  font-weight: 700;
+  color: var(--ms-primary-dark);
+}
+
+/* Warning sign cards */
+.sign-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.sign-card:hover {
+  transform: translateY(-6px);
+}
+
+.sign-icon {
+  font-size: 2.25rem;
+  color: var(--ms-accent);
+  margin-bottom: 1rem;
+}
+
+/* Stats */
+.stats-section {
+  background: linear-gradient(135deg, var(--ms-primary-dark), #2a413d);
+}
+
+.stat-number {
+  font-family: 'Merriweather', serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+/* Resource cards */
+.resource-card {
+  background: var(--ms-cream);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.resource-icon {
+  font-size: 2rem;
+  color: var(--ms-primary);
+  margin-bottom: 1rem;
+}
+
+/* Stories */
+.story-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.story-quote-icon {
+  color: var(--ms-accent);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.story-card p {
+  font-style: italic;
+}
+
+.story-author {
+  font-weight: 700;
+  color: var(--ms-primary-dark);
+  margin-top: 1rem;
+}
+
+/* Crisis section */
+.crisis-section {
+  background: linear-gradient(135deg, var(--ms-crisis), #8d3c32);
+}
+
+.crisis-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.crisis-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.crisis-card h4 {
+  margin-bottom: 0.75rem;
+}
+
+/* Newsletter */
+.newsletter-form .form-control {
+  border-radius: 30px 0 0 30px;
+  padding: 1.5rem 1.25rem;
+}
+
+.newsletter-form .btn {
+  border-radius: 0 30px 30px 0;
+  padding: 0 2rem;
+  background-color: var(--ms-primary);
+  border-color: var(--ms-primary);
+  font-weight: 700;
+}
+
+.newsletter-form .btn:hover {
+  background-color: var(--ms-primary-dark);
+  border-color: var(--ms-primary-dark);
+}
+
+/* Footer */
+.footer {
+  background: var(--ms-primary-dark);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 3rem 0;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.footer a:hover {
+  color: var(--ms-accent);
+}
+
+.footer-disclaimer {
+  font-size: 0.85rem;
+  max-width: 650px;
+  margin: 0 auto;
+  opacity: 0.75;
+}
+
+@media (max-width: 991px) {
+  body {
+    padding-top: 92px;
+  }
+
+  #mainNav {
+    top: 0;
+  }
+
+  .crisis-bar {
+    position: static;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-heading {
+    font-size: 2.1rem;
+  }
+
+  .hero-subheading {
+    font-size: 1.05rem;
+  }
+
+  .page-section {
+    padding: 4rem 0;
+  }
+}
