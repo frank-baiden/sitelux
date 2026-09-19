@@ -5,78 +5,356 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="MindSpace is a mental health awareness website offering education, warning signs, coping resources, and crisis helpline information.">
+    <meta name="author" content="MindSpace">
 
-    <title>Coming Soon - Start Bootstrap Theme</title>
+    <title>MindSpace &mdash; Mental Health Awareness</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Custom styles for this template -->
-    <link href="css/coming-soon.min.css" rel="stylesheet">
+    <!-- Custom styles for this site -->
+    <link href="css/mindspace.css" rel="stylesheet">
 
   </head>
 
-  <body>
+  <body id="page-top">
 
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="mp4/bg.mp4" type="video/mp4">
-    </video>
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <div class="masthead">
-      <div class="masthead-bg"></div>
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-12 my-auto">
-            <div class="masthead-content text-white py-5 py-md-0">
-              <h1 class="mb-3">Coming Soon!</h1>
-              <p class="mb-5">We're working hard to finish the development of this site. Our target launch date is
-                <strong>January 2019</strong>! Sign up for updates using the form below!</p>
-              <div class="input-group input-group-newsletter">
-                <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
-                <div class="input-group-append">
-                  <button class="btn btn-secondary" type="button">Notify Me!</button>
+    <!-- Crisis banner -->
+    <div class="crisis-bar text-center">
+      <span>In crisis right now? <a href="#crisis">Get immediate help</a> &mdash; you are not alone.</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top"><i class="fas fa-leaf mr-2"></i>MindSpace</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#signs">Warning Signs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#stats">Statistics</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resources">Coping Tools</a></li>
+            <li class="nav-item"><a class="nav-link" href="#stories">Stories</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-crisis ml-lg-3" href="#crisis">Get Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main-content">
+
+      <!-- Header/Hero -->
+      <header class="hero-section text-center text-white">
+        <div class="container">
+          <h1 class="hero-heading">It's okay to not be okay.</h1>
+          <p class="hero-subheading">MindSpace exists to raise awareness, break the stigma, and connect people with
+            real support for their mental health &mdash; because every mind deserves care.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-light btn-lg mr-2" href="#resources">Explore Coping Tools</a>
+            <a class="btn btn-outline-light btn-lg" href="#crisis">Find Help Now</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- About / Awareness -->
+      <section id="about" class="page-section bg-white">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h2 class="section-heading">Mental health is health.</h2>
+              <p class="lead-paragraph">One in five adults experiences a mental health condition each year, yet
+                stigma and silence keep far too many people from asking for help. MindSpace was created to change
+                that conversation.</p>
+              <p>We believe understanding is the first step toward healing. Through education, honest stories, and
+                accessible resources, we want everyone &mdash; regardless of background or circumstance &mdash; to
+                feel empowered to care for their mind as they would their body.</p>
+              <ul class="list-unstyled about-list">
+                <li><i class="fas fa-check-circle"></i> Evidence-informed information, written in plain language</li>
+                <li><i class="fas fa-check-circle"></i> Judgment-free space to learn about symptoms and support</li>
+                <li><i class="fas fa-check-circle"></i> Pathways to professional and peer support</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-card">
+                <h3>You are not alone</h3>
+                <p>Anxiety, depression, burnout, grief, and trauma touch nearly every family. Reaching out for
+                  support is a sign of strength, not weakness.</p>
+                <div class="about-card-quote">
+                  <i class="fas fa-quote-left"></i>
+                  <p>&ldquo;Recovery is not one and done. It is a lifelong journey that takes place one day, one
+                    step at a time.&rdquo;</p>
+                  <span>&mdash; Mental Health America</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Warning Signs -->
+      <section id="signs" class="page-section bg-light">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-heading">Know the warning signs</h2>
+            <p class="section-subheading">Recognizing these signs early &mdash; in yourself or someone you love
+              &mdash; can make it easier to reach out before a crisis develops.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="sign-card h-100">
+                <i class="fas fa-cloud-rain sign-icon"></i>
+                <h4>Persistent sadness</h4>
+                <p>Feeling down, hopeless, or empty for more than two weeks, or losing interest in things once
+                  enjoyed.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="sign-card h-100">
+                <i class="fas fa-bolt sign-icon"></i>
+                <h4>Extreme mood changes</h4>
+                <p>Sudden shifts between highs and lows, irritability, or feeling on edge without a clear cause.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="sign-card h-100">
+                <i class="fas fa-users-slash sign-icon"></i>
+                <h4>Withdrawing from others</h4>
+                <p>Pulling away from friends, family, work, or activities, and isolating for long periods.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="sign-card h-100">
+                <i class="fas fa-bed sign-icon"></i>
+                <h4>Changes in sleep or appetite</h4>
+                <p>Sleeping or eating much more or less than usual, or noticeable changes in energy levels.</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-muted mt-2">If these signs sound familiar, please don&rsquo;t wait &mdash;
+            <a href="#crisis">explore support options</a> or talk to a trusted person today.</p>
+        </div>
+      </section>
+
+      <!-- Statistics -->
+      <section id="stats" class="page-section stats-section text-white">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-heading text-white">The numbers tell a story</h2>
+            <p class="section-subheading text-white-75">Awareness starts with understanding just how many of us
+              are affected.</p>
+          </div>
+          <div class="row text-center">
+            <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="stat-number">1 in 5</div>
+              <div class="stat-label">Adults experience mental illness each year</div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="stat-number">50%</div>
+              <div class="stat-label">Of lifetime mental illness begins by age 14</div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat-number">60%</div>
+              <div class="stat-label">Of adults with mental illness received no treatment last year</div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat-number">988</div>
+              <div class="stat-label">The number to call or text for confidential crisis support (US)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Coping Resources -->
+      <section id="resources" class="page-section bg-white">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-heading">Everyday coping tools</h2>
+            <p class="section-subheading">Small, consistent habits can help protect and strengthen your mental
+              well-being.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="resource-card h-100">
+                <i class="fas fa-heartbeat resource-icon"></i>
+                <h4>Move your body</h4>
+                <p>Even a 10-minute walk can lower stress hormones and boost mood-supporting chemicals in the
+                  brain.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="resource-card h-100">
+                <i class="fas fa-moon resource-icon"></i>
+                <h4>Protect your sleep</h4>
+                <p>Aim for a consistent bedtime. Sleep is one of the strongest predictors of emotional resilience.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="resource-card h-100">
+                <i class="fas fa-comments resource-icon"></i>
+                <h4>Talk it out</h4>
+                <p>Share how you feel with a friend, family member, or therapist. Naming an emotion can lessen its
+                  weight.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="resource-card h-100">
+                <i class="fas fa-spa resource-icon"></i>
+                <h4>Practice grounding</h4>
+                <p>Try slow breathing or the 5-4-3-2-1 technique to calm your nervous system in the moment.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="resource-card h-100">
+                <i class="fas fa-pen resource-icon"></i>
+                <h4>Journal your thoughts</h4>
+                <p>Writing for even five minutes a day can help you process emotions and spot patterns over time.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="resource-card h-100">
+                <i class="fas fa-hand-holding-heart resource-icon"></i>
+                <h4>Limit doomscrolling</h4>
+                <p>Set boundaries with news and social media, especially before bed, to protect your mental
+                  energy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stories / Testimonials -->
+      <section id="stories" class="page-section bg-light">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-heading">Stories of hope</h2>
+            <p class="section-subheading">Real experiences, shared to remind you that recovery and resilience are
+              possible.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-4">
+              <div class="story-card h-100">
+                <i class="fas fa-quote-left story-quote-icon"></i>
+                <p>&ldquo;Therapy taught me that asking for help isn&rsquo;t giving up &mdash; it&rsquo;s the
+                  bravest thing I&rsquo;ve ever done.&rdquo;</p>
+                <div class="story-author">&mdash; Amara, 27</div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="story-card h-100">
+                <i class="fas fa-quote-left story-quote-icon"></i>
+                <p>&ldquo;My son&rsquo;s anxiety was invisible to everyone but us. Learning the signs helped our
+                  whole family support him.&rdquo;</p>
+                <div class="story-author">&mdash; Daniel, father</div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="story-card h-100">
+                <i class="fas fa-quote-left story-quote-icon"></i>
+                <p>&ldquo;Some days are still hard. But now I have the tools, and the people, to get through
+                  them.&rdquo;</p>
+                <div class="story-author">&mdash; Priya, 34</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Crisis / Get Help -->
+      <section id="crisis" class="page-section crisis-section text-white">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-heading text-white">If you or someone you know is struggling</h2>
+            <p class="section-subheading text-white-75">Free, confidential support is available right now, day or
+              night.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="crisis-card h-100">
+                <i class="fas fa-phone-alt crisis-icon"></i>
+                <h4>988 Suicide &amp; Crisis Lifeline</h4>
+                <p>Call or text <strong>988</strong> for free, confidential support, 24/7 (US).</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="crisis-card h-100">
+                <i class="fas fa-sms crisis-icon"></i>
+                <h4>Crisis Text Line</h4>
+                <p>Text <strong>HOME</strong> to <strong>741741</strong> to reach a trained crisis counselor.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="crisis-card h-100">
+                <i class="fas fa-globe crisis-icon"></i>
+                <h4>International Help</h4>
+                <p>Visit <strong>findahelpline.com</strong> for crisis lines and support outside the US.</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-center mt-3 mb-0">If you are in immediate danger, please call your local emergency number
+            right away.</p>
+        </div>
+      </section>
+
+      <!-- Newsletter / Get Involved -->
+      <section id="involved" class="page-section bg-white">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              <h2 class="section-heading">Join the movement</h2>
+              <p class="section-subheading">Sign up to receive mental health tips, event updates, and reminders
+                that you matter.</p>
+              <form class="newsletter-form" id="newsletterForm">
+                <div class="input-group input-group-lg">
+                  <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email" required>
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                  </div>
+                </div>
+                <small class="form-text text-muted mt-2">We respect your privacy. Unsubscribe anytime.</small>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="social-icons mb-3">
+          <ul class="list-unstyled list-inline mb-0">
+            <li class="list-inline-item"><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <p class="mb-1">&copy; <span id="year"></span> MindSpace. All rights reserved.</p>
+        <p class="footer-disclaimer">MindSpace provides educational information only and is not a substitute for
+          professional medical advice, diagnosis, or treatment. In an emergency, call your local emergency number.</p>
       </div>
-    </div>
+    </footer>
 
-    <div class="social-icons">
-      <ul class="list-unstyled text-center mb-0">
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </li>
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
+    <!-- Core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/coming-soon.min.js"></script>
+    <!-- Custom script -->
+    <script src="js/mindspace.js"></script>
 
   </body>
 
